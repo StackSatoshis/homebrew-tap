@@ -41,4 +41,10 @@ cask "safu" do
                      print_stderr: false
     end
   end
+
+  caveats <<~EOS
+    safu only places the binary. To turn it on in your shell, run:
+      safu setup            (interactive)
+      safu init --write-rc  (non-interactive)
+  EOS
 end
